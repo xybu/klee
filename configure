@@ -3515,12 +3515,12 @@ else
     with_llvmobj=`llvm-config --obj-root`
 fi
 
-if test ! -f ${with_llvmsrc}/Makefile.rules; then
-   as_fn_error $? "invalid llvmsrc directory: ${with_llvmsrc}" "$LINENO" 5
-fi
-if test ! -f ${with_llvmobj}/Makefile.config; then
-   as_fn_error $? "invalid llvmobj directory: ${with_llvmobj}" "$LINENO" 5
-fi
+# if test ! -f ${with_llvmsrc}/Makefile.rules; then
+#    as_fn_error $? "invalid llvmsrc directory: ${with_llvmsrc}" "$LINENO" 5
+# fi
+# if test ! -f ${with_llvmobj}/Makefile.config; then
+#    as_fn_error $? "invalid llvmobj directory: ${with_llvmobj}" "$LINENO" 5
+# fi
 
 llvm_src=`cd $with_llvmsrc 2> /dev/null; pwd`
 llvm_obj=`cd $with_llvmobj 2> /dev/null; pwd`
